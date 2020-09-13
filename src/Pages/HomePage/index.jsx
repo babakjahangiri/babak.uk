@@ -26,10 +26,6 @@ const HomePage = () => {
     clamp: true,
   });
 
-  const backendBgPos = useTransform(scrollY, [1500, 1600], [-1000, 0], {
-    clamp: true,
-  });
-
   const ecommerceTitleScale = useTransform(scrollY, [700, 900], [5, 1], {
     clamp: true,
   });
@@ -38,11 +34,22 @@ const HomePage = () => {
     clamp: true,
   });
 
-  const ecommerceTextOpacity = useTransform(scrollY, [1100, 1200], [0, 1], {
+  const ecommerceTextOpacity = useTransform(scrollY, [1000, 1200], [0, 1], {
     clamp: true,
   });
 
+  const backendBgPos = useTransform(scrollY, [1500, 1700], [-1000, 0], {
+    clamp: true,
+  });
   const backendTitleScale = useTransform(scrollY, [1500, 1600], [5, 1], {
+    clamp: true,
+  });
+
+  const backendPicPos = useTransform(scrollY, [1700, 2000], [-1000, 0], {
+    clamp: true,
+  });
+
+  const backendTextOpacity = useTransform(scrollY, [1800, 2000], [0, 1], {
     clamp: true,
   });
 
@@ -76,11 +83,11 @@ const HomePage = () => {
 
       <section className="section-container">
         <div className="section-title-container">
-          <motion.p style={{ x: ecommerceBgPos }}>E-Commerce </motion.p>
+          <motion.p style={{ x: ecommerceBgPos }}>E-commerce </motion.p>
 
           <div>&nbsp;</div>
           <motion.h3 style={{ scale: ecommerceTitleScale }}>
-            E-Commerce Design
+            E-commerce Frontend
           </motion.h3>
         </div>
         <div className="section-content-container">
@@ -111,21 +118,28 @@ const HomePage = () => {
           <motion.p style={{ x: backendBgPos }}>Back-end</motion.p>
           <div>&nbsp;</div>
           <motion.h3 style={{ scale: backendTitleScale }}>
-            Back-end API Design
+            Backend API
           </motion.h3>
         </div>
         <div className="section-content-container">
+          <motion.div style={{ x: backendPicPos }}>
+            <img src={backendPic} alt="Backend API Development" />
+          </motion.div>
           <div>
-            <img src={backendPic} alt="E-commerce Frontend design" />
-          </div>
-          <div>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
+            <motion.p
+              style={{ opacity: backendTextOpacity }}
+              initial={{ x: 500 }}
+              animate={{ x: 0 }}
+              transition={{ type: "spring" }}
+            >
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </motion.p>
           </div>
         </div>
       </section>
