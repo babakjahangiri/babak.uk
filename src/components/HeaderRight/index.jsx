@@ -8,7 +8,7 @@ const HeaderRight = () => {
       <div className="header__rightone">
         <div>
           <motion.p
-            initial={{ scale: 2 }}
+            initial={{ scale: 1.5 }}
             animate={{ scale: 1, x: 1 }}
             transition={{ delay: 0.5, duration: 1, type: "tween" }}
           >
