@@ -24,8 +24,15 @@ const PageHeaderRight = ({ title }) => {
       break;
   }
 
+  //const HeaderImgOpacity = useTransform(scrollY, [400, 500], [0.1, 1]);
+
   return (
-    <div className="pageheader__rightContainer">
+    <motion.div
+      className="pageheader__rightContainer"
+      initial={{ opacity: -1 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 1 }}
+    >
       <div>
         <img
           src={headerImg}
@@ -39,7 +46,7 @@ const PageHeaderRight = ({ title }) => {
           <p className="header__right-downblock"></p>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
