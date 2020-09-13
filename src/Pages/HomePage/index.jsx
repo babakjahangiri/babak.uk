@@ -9,10 +9,7 @@ import frontendPic from "./../../images/frontend.png";
 import backendPic from "./../../images/backend.png";
 
 const HomePage = () => {
-  //const [pos, setPos] = useState(false);
-
   const { scrollY } = useViewportScroll();
-  //const ref = useRef();
 
   const introOpacity = useTransform(scrollY, [400, 500], [0.1, 1]);
   const introPicPosition = useTransform(scrollY, [250, 400], [1000, 0], {
