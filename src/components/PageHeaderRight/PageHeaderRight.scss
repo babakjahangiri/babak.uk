@@ -1,0 +1,47 @@
+@import "../../scss/_variables";
+@import "../../scss/_mixins";
+
+.pageheader__rightContainer {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  background-color: $secondary-color;
+
+  > div:nth-child(1) {
+    display: block;
+    background-color: $tertiary-color;
+    width: 100%;
+    height: 55%;
+    text-align: right;
+  }
+
+  > div:nth-child(2) {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-content: flex-end;
+    height: 45%;
+
+    div {
+      align-self: flex-end;
+      p {
+        margin: 0;
+      }
+    }
+
+    p {
+      align-self: flex-end;
+      font-size: 5rem;
+      margin: auto 0 20px auto;
+      font-family: $page-fontfamily;
+    }
+  }
+}
+
+.pageheader-image {
+  // position: absolute;
+  //z-index: 100px;
+  //right: 0;
+  width: 400px;
+  height: auto;
+}

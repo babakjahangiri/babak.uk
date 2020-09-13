@@ -1,0 +1,29 @@
+@import "../../scss/_variables";
+
+nav {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  align-items: flex-start;
+  width: 80%;
+  a {
+    text-decoration: none;
+    color: $primary-fontcolor;
+    font-family: $menu-fontfamily;
+    font-size: 2em;
+    font-weight: 100;
+    line-height: 1.5em;
+    margin: 10px 0;
+    padding: 5px 0 5px 20px;
+
+    &:visited {
+      color: $primary-fontcolor;
+    }
+
+    &:hover {
+      border-left: 1px inset $primary-fontcolor;
+
+      font-weight: 300;
+    }
+  }
+}

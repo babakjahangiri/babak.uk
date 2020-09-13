@@ -1,0 +1,98 @@
+@import "./../../scss/variables";
+
+.section__intro {
+  margin: 130px 0 50px;
+  display: flex;
+  color: $primary-fontcolor;
+
+  div {
+    width: 50%;
+
+    h2 {
+      font-size: 4em;
+      font-family: $menu-fontfamily;
+      margin-left: 40px;
+      margin-top: 20px;
+      border-left: 10px solid $primary-color;
+      padding: 0 0 0 30px;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+
+    p {
+      margin-left: 40px;
+      margin-right: 40px;
+      line-height: 1.5em;
+      font-family: $menu-fontfamily;
+      font-size: 1.25em;
+      font-weight: 300;
+    }
+  }
+}
+
+.section__intro-block {
+}
+
+.section-container {
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+
+.section-title-container {
+  font-family: $menu-fontfamily;
+
+  :nth-child(2) {
+    width: 5%;
+  }
+  :nth-child(3) {
+    width: 95%;
+  }
+
+  p {
+    position: absolute;
+    z-index: -1;
+    font-size: 15vw;
+    font-weight: 500;
+    word-wrap: normal;
+    color: $secondary-color;
+    margin: 0;
+    right: 0;
+  }
+
+  h3 {
+    font-family: $page-fontfamily;
+    font-size: 6em;
+    font-weight: 600;
+    margin: 70px 0 40px auto;
+    text-align: left;
+    border-right: 30px solid $primary-color;
+    color: $primary-fontcolor;
+  }
+}
+
+.section-content-container {
+  display: flex;
+
+  div {
+    width: 50%;
+
+    img {
+      width: 70%;
+      padding-right: 20px;
+      float: right;
+    }
+  }
+
+  :nth-child(2) {
+    font-family: $page-fontfamily;
+    font-size: 1.25em;
+    font-weight: 300;
+    margin: 0 20px;
+    p {
+      margin: 5px 100px auto 20px;
+    }
+  }
+}

@@ -1,0 +1,15 @@
+@mixin downblock($color) {
+  display: block;
+  background-color: $color;
+  width: 100px;
+  height: 20px;
+  align-self: flex-end;
+}
+
+// .downblock {
+//     display: block;
+//     background-color: $primary-color;
+//     width: 100px;
+//     height: 20px;
+//     align-self: flex-end;
+//   }
