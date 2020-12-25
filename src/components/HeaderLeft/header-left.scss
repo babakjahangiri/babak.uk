@@ -1,14 +1,16 @@
-@import "../../scss/_variables";
-@import "../../scss/_mixins";
+@import '../../scss/_variables';
+@import '../../scss/_mixins';
 
 .header__leftContainer {
   display: flex;
+  //display: none;
   justify-content: space-between;
   width: 50%;
   background-color: $tertiary-color;
 }
 
 .header__leftone {
+  display: none;
   width: 40%;
   padding-left: 50px;
 }
@@ -41,7 +43,8 @@
 .header__lefttwo {
   display: flex;
   flex-direction: column;
-  width: 60%;
+  //width: 60%;
+  width:100%;
   // align-items: flex-end;
   //justify-content: flex-end;
 
@@ -70,3 +73,29 @@
   background-color: $primary-color;
   @include downblock($primary-color);
 }
+
+@media only screen and (min-width: 576px) {
+
+}
+
+@media only screen and (min-width: 768px) {
+
+}
+
+@media (min-width: 992px) {
+  .header__leftContainer {
+    display: flex;
+  }
+
+  .header__leftone {
+    display: flex;
+    width: 40%;
+    padding-left: 50px;
+  }
+
+
+  .header__lefttwo {
+     width: 60%;
+  }
+}
+

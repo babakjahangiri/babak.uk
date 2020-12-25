@@ -4,14 +4,16 @@
   margin: 130px 0 50px;
   display: flex;
   color: $primary-fontcolor;
+  flex-direction: column-reverse;
 
   div {
-    width: 50%;
+    width: 100%;
 
     h2 {
-      font-size: 4em;
+      font-size: 1.65em;
+      margin-left: 20px;
       font-family: $menu-fontfamily;
-      margin-left: 40px;
+    
       margin-top: 20px;
       border-left: 10px solid $primary-color;
       padding: 0 0 0 30px;
@@ -95,4 +97,31 @@
       margin: 5px 100px auto 20px;
     }
   }
+}
+
+@media (min-width:992px){
+  .section__intro {
+    flex-direction: row;
+    div {
+       width: 50%;
+       h2{
+        font-size: 4em;
+        margin-left: 40px;
+       }
+    }
+  }
+
+}
+
+
+@media only screen and (min-width: 576px) {
+
+}
+
+@media only screen and (min-width: 768px) {
+ 
+}
+
+@media only screen and (min-width: 992px) {
+
 }

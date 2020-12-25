@@ -50,42 +50,37 @@ const HomePage = () => {
     clamp: true,
   });
 
-  // useEffect(() => {
-  //   scrollY.onChange((e) => (e.current > 1200 ? setPos(true) : null));
-  // });
-
   return (
     <React.Fragment>
       <Header />
       <section className="section__intro">
         <div>
-          {/* <div classname="section__intro-block"></div> */}
+          <div classname="section__intro-block"></div>
           <motion.h2
             initial={{ opacity: 0.1 }}
             style={{ opacity: introOpacity }}
           >
             Babak's web design sets you apart
           </motion.h2>
-          <motion.p style={{ x: introTextPosition }}>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-            Consequuntur delectus fugit soluta deserunt possimus cumque eos,
-            quod quasi provident fuga ad pariatur, nesciunt voluptatibus quidem
-            quae aut accusantium ipsam asperiores!
+          <motion.p style={{ x: introTextPosition}}>
+            An elegant design is not only about the appearance and how does your website looks.
+            One of the aspects of a good design is to make a useful product that builds a good relationship
+            with your customers.It has to satisfy certain criteria,not only functional but also
+            psychological and aesthetic.I offer simple website design with a minimalist approach. 
           </motion.p>
         </div>
-        <motion.div initial={{ x: 1000 }} style={{ x: introPicPosition }}>
-          <img src={IntroPic} alt="type writer machine" />
+        <motion.div initial={{ x: 1000 }} style={{ x: introPicPosition}}>
+          <img src={IntroPic} alt="type writer machine"/>
         </motion.div>
       </section>
 
       <section className="section-container">
         <div className="section-title-container">
-          <motion.p style={{ x: ecommerceBgPos }}>E-commerce </motion.p>
-
+          {/* <motion.p style={{ x: ecommerceBgPos }}>Frontend </motion.p>
           <div>&nbsp;</div>
           <motion.h3 style={{ scale: ecommerceTitleScale }}>
-            E-commerce Frontend
-          </motion.h3>
+            Frontend Design
+          </motion.h3> */}
         </div>
         <div className="section-content-container">
           <motion.div style={{ x: frontendPicPos }}>
@@ -112,11 +107,11 @@ const HomePage = () => {
 
       <section className="section-container">
         <div className="section-title-container">
-          <motion.p style={{ x: backendBgPos }}>Back-end</motion.p>
+          {/* <motion.p style={{ x: backendBgPos }}>Back-end</motion.p>
           <div>&nbsp;</div>
           <motion.h3 style={{ scale: backendTitleScale }}>
             Backend API
-          </motion.h3>
+          </motion.h3> */}
         </div>
         <div className="section-content-container">
           <motion.div style={{ x: backendPicPos }}>

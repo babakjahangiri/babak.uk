@@ -4,8 +4,9 @@
 .pageheader__rightContainer {
   display: flex;
   flex-direction: column;
-  width: 50%;
+  width: 100%;
   background-color: $secondary-color;
+  
 
   > div:nth-child(1) {
     display: block;
@@ -26,6 +27,7 @@
       align-self: flex-end;
       p {
         margin: 0;
+        background-color:$primary-color;
       }
     }
 
@@ -33,7 +35,9 @@
       align-self: flex-end;
       font-size: 5rem;
       margin: auto 0 20px auto;
+      margin-bottom: 20px;
       font-family: $page-fontfamily;
+      background-color:$secondary-color;
     }
   }
 }
@@ -44,4 +48,19 @@
   //right: 0;
   width: 400px;
   height: auto;
+}
+
+
+@media (min-width: 992px) {
+  .pageheader__rightContainer {
+    width: 50%;
+  
+    > div:nth-child(2) {
+      div p{
+          margin: 0;
+          background-color:white;
+      } 
+
+    }
+  }
 }

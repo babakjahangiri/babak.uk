@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "name": "Photosnap",
+    "position": "description of the project",
+    "image": "./images/photosnap.svg",
+    "new": true,
+    "github": "http://github.com/",
+    "liveUrl": "http://netlify.com",
+    "technologies": ["HTML", "CSS", "JavaScript"]
+  },
+  {
+    "id": 1,
+    "name": "Photosnap",
+    "position": "description of the project",
+    "image": "./images/photosnap.svg",
+    "new": true,
+    "github": "http://github.com/",
+    "liveUrl": "http://netlify.com",
+    "technologies": ["HTML", "CSS", "JavaScript"]
+  },
+  {
+    "id": 1,
+    "name": "Photosnap",
+    "position": "description of the project",
+    "image": "./images/photosnap.svg",
+    "new": true,
+    "github": "http://github.com/",
+    "liveUrl": "http://netlify.com",
+    "technologies": ["HTML", "CSS", "JavaScript"]
+  }
+]

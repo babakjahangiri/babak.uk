@@ -26,13 +26,6 @@ const HeaderLeft = () => {
       </div>
       <div className="header__lefttwo">
         <div>
-          {/* <motion.p
-            initial={{ scale: 10 }}
-            animate={{ scale: 1, x: 1 }}
-            transition={{ delay: 0.5, duration: 1, type: "tween" }}
-          >
-            Simplicity
-          </motion.p> */}
         </div>
         <div>
           <div className="header__left-downblock"></div>
