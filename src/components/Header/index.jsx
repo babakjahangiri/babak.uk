@@ -1,6 +1,6 @@
 import React from 'react';
 import { useLocation } from 'react-router-dom';
-import { HeaderLeft, HeaderRight, PageHeaderRight } from './../../components';
+import { HeaderMobile,HeaderLeft,HeaderRight,PageHeaderRight } from './../../components';
 import './header.scss';
 
 const Header = () => {
@@ -27,6 +27,7 @@ const Header = () => {
 
   return (
     <header>
+      <HeaderMobile/>
       <div class="header-desktop">
       <HeaderLeft />
       {which_header}
