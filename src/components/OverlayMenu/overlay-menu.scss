@@ -1,0 +1,57 @@
+@import '../../scss/_variables';
+
+.overlay-menu{
+  display:block;
+  position:relative;
+	width: 100%;
+  min-height: 500px;
+	top: 0;
+	left: 0;
+	background: $tertiary-color;
+  z-index: 90;
+ }
+  .nav-hamburger {
+    position: relative;
+    text-align: center;
+    font-size: 3em;
+    
+    ul{
+        list-style: none;
+        padding: 0;
+        margin: 30px auto;
+        display: inline-block;
+
+        li{
+          display: block;
+          line-height: 3em;
+          
+          a{
+            display: block;
+            font-weight: 200;
+            font-size: 4rem;
+            color : $primary-fontcolor;
+            text-decoration:none;
+            text-transform:uppercase;
+
+            &:visited {
+              color: $primary-fontcolor;
+            }
+        
+            &:hover, &:focus {
+              border-bottom: 1px inset $primary-fontcolor;
+              font-weight: 300;
+            }
+          }
+        }
+    }
+}
+
+@media (min-width: 992px) {
+  .header-mobile {
+    display: none;
+  }
+
+  .overlay-menu{
+    display: none;
+  }
+}

@@ -55,7 +55,7 @@ const HomePage = () => {
       <Header />
       <section className="section__intro">
         <div>
-          <div classname="section__intro-block"></div>
+          <div className="section__intro-block"></div>
           <motion.h2
             initial={{ opacity: 0.1 }}
             style={{ opacity: introOpacity }}

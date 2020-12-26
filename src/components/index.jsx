@@ -5,3 +5,4 @@ export { default as HeaderLeft } from "./HeaderLeft";
 export { default as HeaderRight } from "./HeaderRight";
 export { default as PageHeaderRight } from "./PageHeaderRight";
 export { default as Footer } from "./Footer";
+export { default as OverlayMenu } from "./OverlayMenu";

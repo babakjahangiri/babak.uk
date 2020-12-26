@@ -28,7 +28,7 @@ const Header = () => {
   return (
     <header>
       <HeaderMobile/>
-      <div class="header-desktop">
+      <div className="header-desktop">
       <HeaderLeft />
       {which_header}
       </div>
