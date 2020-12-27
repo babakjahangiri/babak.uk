@@ -1,20 +1,28 @@
 @import '../../scss/_variables';
 
 .overlay-menu{
-  display:block;
-  position:relative;
+  display:flex;
+  flex-direction:column;
 	width: 100%;
-  min-height: 500px;
-	top: 0;
-	left: 0;
+  height: 0;
 	background: $tertiary-color;
-  z-index: 90;
- }
+  transform: translateY(-900px);
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+
+.overlay-menu-reveal{
+  height: 640px;
+  transform: translateY(0px);
+}
+
   .nav-hamburger {
-    position: relative;
     text-align: center;
     font-size: 3em;
-    
+    background:$tertiary-color;
+
     ul{
         list-style: none;
         padding: 0;
@@ -22,13 +30,11 @@
         display: inline-block;
 
         li{
-          display: block;
           line-height: 3em;
           
           a{
-            display: block;
             font-weight: 200;
-            font-size: 4rem;
+            font-size: 3rem;
             color : $primary-fontcolor;
             text-decoration:none;
             text-transform:uppercase;

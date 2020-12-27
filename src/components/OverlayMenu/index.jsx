@@ -1,20 +1,49 @@
-import React from 'react';
+import React, { useState,useEffect, useContext } from 'react';
+import { NavLink } from "react-router-dom";
+import {ToggleBurgerContext,ToggleBurgerProvider} from "./../../context";
 import './overlay-menu.scss';
 
 const OverlayMenu = () => {
+
+const [burgerStatus,setBurgerStatus]= useContext(ToggleBurgerContext);
+const [menuClass,setMenuClass] = useState('');
+
+  useEffect(() => {
+    if (burgerStatus){
+      setMenuClass('overlay-menu-reveal');
+    }else{
+      setMenuClass('');
+    }
+
+  }, [burgerStatus])
+
+
   return (
-  <div className="overlay-menu">
+  <div className={`overlay-menu ${menuClass}`}>
         <nav className="nav-hamburger">
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Work</a></li>
-            <li><a href="#">Clients</a></li>
-            <li><a href="#">Contact</a></li>
+            <li>
+            <NavLink to="/about" exact>About</NavLink>
+            </li>
+            <li>
+            <NavLink to="/projects" exact>Projects</NavLink>
+            </li>
+            <li>
+             <NavLink to="/solutions" exact>
+        Solutions
+      </NavLink></li>
+      <li>
+      <NavLink to="/contact" exact>
+        Contact
+      </NavLink></li>
           </ul>
         </nav>
   </div>
   );
 };
+
+
+      
+     
 
 export default OverlayMenu;

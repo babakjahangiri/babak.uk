@@ -1,0 +1,29 @@
+@import '../../scss/_variables';
+
+.burger-icon{
+  display:block;
+  margin : 30px;
+  z-index:104;
+}
+
+#burger input{
+  display:block;
+  position: absolute;
+  width:50px;
+  height: 50px;
+  top: 24px;
+  right:27px;
+  cursor: pointer;
+  opacity: 0;
+  z-index:110;
+}
+#burger span{
+  display:block;
+  width: 50px;
+  height:3px;
+  margin-bottom: 15px;
+  position: relative;
+  background:$primary-color;
+  border-radius: 3px;
+  z-index:105;
+}
