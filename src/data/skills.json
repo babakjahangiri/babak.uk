@@ -1,52 +1,52 @@
 [
-  {
-    "id": 1,
-    "name": "Figma / Adobe XD",
-    "percentage": "80"
-  },
-  {
-    "id": 2,
-    "name": "Adobe Photoshop",
-    "percentage": "30"
-  },
-  {
-    "id": 3,
-    "name": "HTML 5",
-    "percentage": "100"
-  },
-  {
-    "id": 4,
-    "name": "CSS3 / SCSS",
-    "percentage": "90"
-  },
-  {
-    "id": 5,
-    "name": "JavaScript / ES6",
-    "percentage": "80"
-  },
-  {
-    "id": 6,
-    "name": "ReactJs",
-    "percentage": "70"
-  },
-  {
-    "id": 7,
-    "name": "C# / ASP.NET Core",
-    "percentage": "55"
-  },
-  {
-    "id": 8,
-    "name": "Nodejs / Express",
-    "percentage": "70"
-  },
-  {
-    "id": 9,
-    "name": "T-SQL",
-    "percentage": "85"
-  },
-  {
-    "id": 10,
-    "name": "MongoDB",
-    "percentage": "65"
-  }
+    {
+        "id": 1,
+        "name": "Figma / Adobe XD",
+        "percentage": "80%"
+    },
+    {
+        "id": 2,
+        "name": "Adobe Photoshop",
+        "percentage": "30%"
+    },
+    {
+        "id": 3,
+        "name": "HTML 5",
+        "percentage": "100%"
+    },
+    {
+        "id": 4,
+        "name": "CSS3 / SCSS",
+        "percentage": "90%"
+    },
+    {
+        "id": 5,
+        "name": "JavaScript / ES6",
+        "percentage": "80%"
+    },
+    {
+        "id": 6,
+        "name": "ReactJs",
+        "percentage": "70%"
+    },
+    {
+        "id": 7,
+        "name": "C# / ASP.NET Core",
+        "percentage": "55%"
+    },
+    {
+        "id": 8,
+        "name": "Nodejs / Express",
+        "percentage": "70%"
+    },
+    {
+        "id": 9,
+        "name": "T-SQL",
+        "percentage": "85%"
+    },
+    {
+        "id": 10,
+        "name": "MongoDB",
+        "percentage": "65%"
+    }
 ]
