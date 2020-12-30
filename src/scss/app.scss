@@ -1,19 +1,23 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Roboto:wght@100;300;400;500&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Roboto:wght@100;300;400;500&display=swap');
 @import '_variables';
 
+* {
+    box-sizing: border-box;
+}
 body {
-  margin: auto;
-  padding: auto;
-  max-width: 100%;
-  overflow-x: hidden; 
+    margin: auto;
+    padding: auto;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 .padding-left-50 {
-  padding-left: 50px;
+    padding-left: 50px;
 }
 
-*{
-  &:focus, &:focus-within {
-  outline-color: $primary-color;
-  }
+* {
+    &:focus,
+    &:focus-within {
+        outline-color: $primary-color;
+    }
 }
