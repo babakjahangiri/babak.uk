@@ -22,7 +22,7 @@ const HomePage = () => {
                     >
                         Babak's web design sets you apart
                     </motion.h2>
-                    <motion.p initial={{ x: -300 }} style={{ x: 0 }}>
+                    <motion.p initial={{ x: 0 }} style={{ x: 0 }}>
                         An elegant design is not only about the appearance and
                         how does your website looks. One of the aspects of a
                         good design is to make a useful product that builds a
@@ -32,7 +32,7 @@ const HomePage = () => {
                         design with a minimalist approach.
                     </motion.p>
                 </div>
-                <motion.div initial={{ x: 1000 }}>
+                <motion.div initial={{ x: 0 }}>
                     <img src={IntroPic} alt="type writer machine" />
                 </motion.div>
             </section>
@@ -44,7 +44,7 @@ const HomePage = () => {
                     <motion.h3>Frontend Design</motion.h3>
                 </div>
                 <div className="section-content-container">
-                    <motion.div>
+                    <motion.div initial={{ x: -500 }} animate={{ x: 0 }}>
                         <img src={frontendPic} alt="Frontend design" />
                     </motion.div>
                     <motion.div
