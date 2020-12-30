@@ -1,0 +1,66 @@
+@import './../../../scss/variables';
+
+.skill-row {
+    height: 10px;
+}
+
+.skill-title {
+    display: inline;
+    font-size: 0.65em;
+    padding-right: 5px;
+    float: right;
+}
+
+.skill-bar-column {
+    width: 200px;
+}
+.skill-bar {
+    display: block;
+    background-color: $secondary-color;
+    height: 10px;
+    width: 100%;
+}
+
+.skill-progress {
+    display: block;
+    background-color: $primary-fontcolor;
+    height: 100%;
+}
+
+@media only screen and (min-width: 576px) {
+    .skill-title {
+        font-size: 0.85em;
+        padding-right: 15px;
+    }
+
+    .skill-row {
+        height: 40px;
+    }
+
+    .skill-bar-column {
+        width: 400px;
+    }
+
+    .skill-bar {
+        height: 15px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .skill-title {
+        font-size: 1em;
+        padding-right: 30px;
+    }
+
+    .skill-row {
+        height: 50px;
+    }
+
+    .skill-bar-column {
+        width: 500px;
+    }
+
+    .skill-bar {
+        height: 20px;
+    }
+}
