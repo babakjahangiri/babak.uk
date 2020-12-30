@@ -66,62 +66,121 @@
 
   h3 {
     font-family: $page-fontfamily;
-    font-size: 6em;
+    font-size: 3em;
     font-weight: 600;
-    margin: 70px 0 40px auto;
+    margin: 35px 0 40px auto;
     text-align: left;
-    border-right: 30px solid $primary-color;
+    border-right: 15px solid $primary-color;
     color: $primary-fontcolor;
   }
 }
 
-.section-content-container {
-  display: flex;
+  .section-content-container {
+    display: flex;
+    flex-direction: column;
+    div {
+      width: 100%;
 
-  div {
-    width: 50%;
-
-    img {
-      width: 70%;
-      padding-right: 20px;
-      float: right;
+      img {
+        width: 80%;
+        padding-left: 30px;
+        float: left;
+      }
     }
-  }
 
   :nth-child(2) {
     font-family: $page-fontfamily;
-    font-size: 1.25em;
+    font-size: 1.35em;
     font-weight: 300;
-    margin: 0 20px;
+    margin: 20px 20px;
     p {
-      margin: 5px 100px auto 20px;
+      margin: 15px 100px auto 20px;
+    }
+
+    div{
+      display:flex;
+      justify-content: flex-end;
+      width: 80%;
+      
     }
   }
 }
 
-@media (min-width:992px){
-  .section__intro {
-    flex-direction: row;
-    div {
-       width: 50%;
-       h2{
-        font-size: 4em;
-        margin-left: 40px;
-       }
-    }
-  }
-
-}
-
+ 
 
 @media only screen and (min-width: 576px) {
+   .section-content-container {
+    display: flex;
+    flex-direction: column;
+    div {
+      width: 100%;
 
+      img {
+        width: 80%;
+        padding-left: 30px;
+        float: left;
+      }
+    }
+
+    :nth-child(2) {
+    font-size: 1.45em;
+    font-weight: 300;
+    margin: 20px 20px;
+    p {
+      margin: 15px 100px auto 20px;
+    }
+  }
+  }
 }
 
 @media only screen and (min-width: 768px) {
- 
+  .section-title-container {
+      h3 {
+        font-size: 4em;
+        margin: 40px 0 40px auto;
+        border-right: 20px solid $primary-color;
+      }
+  }
 }
 
 @media only screen and (min-width: 992px) {
 
+  .section__intro {
+      flex-direction: row;
+      div {
+        width: 50%;
+        h2{
+          font-size: 4em;
+          margin-left: 40px;
+        }
+      }
+    }
+  .section-title-container {
+    h3 {
+      font-size: 6em;
+      margin: 70px 0 40px auto;
+      border-right: 30px solid $primary-color;
+    }
+  }
+
+  .section-content-container {
+    flex-direction: row;
+      div {
+        width: 50%;
+
+        img {
+          width: 70%;
+          padding-right: 20px;
+          float: right;
+        }
+      }
+
+      :nth-child(2) {
+        font-size: 1.25em;
+        margin: 0 20px;
+        p {
+          margin: 5px 100px auto 20px;
+        }
+      }
+  }
 }

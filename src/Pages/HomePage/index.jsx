@@ -1,142 +1,117 @@
-import React from "react";
-import { motion, useViewportScroll, useTransform } from "framer-motion";
+import React from 'react'
+import { NavLink } from 'react-router-dom'
+import { motion } from 'framer-motion'
+import { Header } from './../../components'
+import './homepage.scss'
+import './../../scss/utils.scss'
 
-import { Header } from "./../../components";
-import "./homepage.scss";
-
-import IntroPic from "./../../images/gray-typewriter.png";
-import frontendPic from "./../../images/frontend.png";
-import backendPic from "./../../images/backend.png";
+import IntroPic from './../../images/gray-typewriter.png'
+import frontendPic from './../../images/frontend.png'
+import backendPic from './../../images/backend.png'
 
 const HomePage = () => {
-  const { scrollY } = useViewportScroll();
+    return (
+        <React.Fragment>
+            <Header />
+            <section className="section__intro">
+                <div>
+                    <div className="section__intro-block"></div>
+                    <motion.h2
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                    >
+                        Babak's web design sets you apart
+                    </motion.h2>
+                    <motion.p initial={{ x: -300 }} style={{ x: 0 }}>
+                        An elegant design is not only about the appearance and
+                        how does your website looks. One of the aspects of a
+                        good design is to make a useful product that builds a
+                        good relationship with your customers. It has to satisfy
+                        certain criteria, not only functional but also
+                        psychological and aesthetic. I offer simple website
+                        design with a minimalist approach.
+                    </motion.p>
+                </div>
+                <motion.div initial={{ x: 1000 }}>
+                    <img src={IntroPic} alt="type writer machine" />
+                </motion.div>
+            </section>
 
-  const introOpacity = useTransform(scrollY, [400, 500], [0.1, 1]);
-  const introPicPosition = useTransform(scrollY, [250, 400], [1000, 0], {
-    clamp: true,
-  });
-  const introTextPosition = useTransform(scrollY, [300, 500], [-900, 0], {
-    clamp: true,
-  });
+            <section className="section-container">
+                <div className="section-title-container">
+                    <motion.p> Frontend</motion.p>
+                    <div>&nbsp;</div>
+                    <motion.h3>Frontend Design</motion.h3>
+                </div>
+                <div className="section-content-container">
+                    <motion.div>
+                        <img src={frontendPic} alt="Frontend design" />
+                    </motion.div>
+                    <motion.div
+                        initial={{ x: 500 }}
+                        animate={{ x: 0 }}
+                        transition={{ type: 'spring' }}
+                    >
+                        <p>
+                            Frontend design involves creating the HTML, CSS and
+                            presentational JavaScript code that makes up a user
+                            interface. The frontend design would involve the
+                            process of UI design and UI development. Wireframe
+                            &amp; mockup must be done before the development
+                            process.
+                        </p>
+                        <div>
+                            <NavLink
+                                className="readmore-btn"
+                                to="/solutions"
+                                exact
+                            >
+                                &#62;
+                            </NavLink>
+                        </div>
+                    </motion.div>
+                </div>
+            </section>
 
-  const ecommerceBgPos = useTransform(scrollY, [900, 1000], [-1000, 0], {
-    clamp: true,
-  });
+            <section className="section-container">
+                <div className="section-title-container">
+                    <motion.p initial={{ x: -300 }} animate={{ x: 0 }}>
+                        Back-end
+                    </motion.p>
+                    <div>&nbsp;</div>
+                    <motion.h3>Backend API</motion.h3>
+                </div>
+                <div className="section-content-container">
+                    <motion.div initial={{ x: -500 }} animate={{ x: 0 }}>
+                        <img src={backendPic} alt="Backend API Development" />
+                    </motion.div>
+                    <motion.div
+                        initial={{ x: 500 }}
+                        animate={{ x: 0 }}
+                        transition={{ type: 'spring' }}
+                    >
+                        <p>
+                            Back-end is the engine of your website, it's
+                            machinery behind the scene. Backend may be
+                            responsible for fetching raw data from the database,
+                            then operate, order or organize them and send to the
+                            frontend.Backend programming is focused on
+                            database,scripting and architecture of websites.
+                        </p>
+                        <div>
+                            <NavLink
+                                className="readmore-btn"
+                                to="/solutions"
+                                exact
+                            >
+                                &#62;
+                            </NavLink>
+                        </div>
+                    </motion.div>
+                </div>
+            </section>
+        </React.Fragment>
+    )
+}
 
-  const ecommerceTitleScale = useTransform(scrollY, [700, 900], [5, 1], {
-    clamp: true,
-  });
-
-  const frontendPicPos = useTransform(scrollY, [800, 1100], [-1000, 0], {
-    clamp: true,
-  });
-
-  const ecommerceTextOpacity = useTransform(scrollY, [1000, 1200], [0, 1], {
-    clamp: true,
-  });
-
-  const backendBgPos = useTransform(scrollY, [1500, 1700], [-1000, 0], {
-    clamp: true,
-  });
-  const backendTitleScale = useTransform(scrollY, [1500, 1600], [5, 1], {
-    clamp: true,
-  });
-
-  const backendPicPos = useTransform(scrollY, [1700, 2000], [-1000, 0], {
-    clamp: true,
-  });
-
-  const backendTextOpacity = useTransform(scrollY, [1800, 2000], [0, 1], {
-    clamp: true,
-  });
-
-  return (
-    <React.Fragment>
-      <Header />
-      <section className="section__intro">
-        <div>
-          <div className="section__intro-block"></div>
-          <motion.h2
-            initial={{ opacity: 0.1 }}
-            style={{ opacity: introOpacity }}
-          >
-            Babak's web design sets you apart
-          </motion.h2>
-          <motion.p style={{ x: introTextPosition}}>
-            An elegant design is not only about the appearance and how does your website looks.
-            One of the aspects of a good design is to make a useful product that builds a good relationship
-            with your customers.It has to satisfy certain criteria,not only functional but also
-            psychological and aesthetic.I offer simple website design with a minimalist approach. 
-          </motion.p>
-        </div>
-        <motion.div initial={{ x: 1000 }} style={{ x: introPicPosition}}>
-          <img src={IntroPic} alt="type writer machine"/>
-        </motion.div>
-      </section>
-
-      <section className="section-container">
-        <div className="section-title-container">
-          {/* <motion.p style={{ x: ecommerceBgPos }}>Frontend </motion.p>
-          <div>&nbsp;</div>
-          <motion.h3 style={{ scale: ecommerceTitleScale }}>
-            Frontend Design
-          </motion.h3> */}
-        </div>
-        <div className="section-content-container">
-          <motion.div style={{ x: frontendPicPos }}>
-            <img src={frontendPic} alt="E-commerce Frontend design" />
-          </motion.div>
-          <div>
-            <motion.p
-              style={{ opacity: ecommerceTextOpacity }}
-              initial={{ x: 500 }}
-              animate={{ x: 0 }}
-              transition={{ type: "spring" }}
-            >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </motion.p>
-          </div>
-        </div>
-      </section>
-
-      <section className="section-container">
-        <div className="section-title-container">
-          {/* <motion.p style={{ x: backendBgPos }}>Back-end</motion.p>
-          <div>&nbsp;</div>
-          <motion.h3 style={{ scale: backendTitleScale }}>
-            Backend API
-          </motion.h3> */}
-        </div>
-        <div className="section-content-container">
-          <motion.div style={{ x: backendPicPos }}>
-            <img src={backendPic} alt="Backend API Development" />
-          </motion.div>
-          <div>
-            <motion.p
-              style={{ opacity: backendTextOpacity }}
-              initial={{ x: 500 }}
-              animate={{ x: 0 }}
-              transition={{ type: "spring" }}
-            >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </motion.p>
-          </div>
-        </div>
-      </section>
-    </React.Fragment>
-  );
-};
-
-export default HomePage;
+export default HomePage
