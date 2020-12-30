@@ -1,33 +1,32 @@
 @import '../../scss/_variables';
 
 .header-mobile {
-  display: flex;
-  justify-content:space-between;
-  width: 100%;
-  height: 100px;
-  z-index:50;
-  background: $tertiary-color;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100px;
+    z-index: 50;
+    background: $tertiary-color;
 }
 
-.burger-icon-container{
-  display: flex;
-  background-color: $secondary-color;
-  justify-content: flex-end;
-  width:50%;
+.burger-icon-container {
+    display: flex;
+    background-color: $secondary-color;
+    justify-content: flex-end;
+    width: 50%;
 }
 
-.logo-mobile-container{
-  display: flex;
-  background-color: $tertiary-color;
-  justify-content: center;
-  text-align: left;
-  padding-left:20px;
-  padding-right:20px;
+.logo-mobile-container {
+    display: flex;
+    background-color: $tertiary-color;
+    justify-content: center;
+    text-align: left;
+    padding-left: 20px;
+    padding-right: 20px;
 }
-
 
 @media (min-width: 992px) {
-  .header-mobile {
-    display: none;
-  }
+    .header-mobile {
+        display: none;
+    }
 }
