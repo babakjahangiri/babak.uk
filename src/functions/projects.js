@@ -1,7 +1,7 @@
-import { getAllByAltText } from "@testing-library/react";
+import { getAllByAltText } from '@testing-library/react'
 
 export const getAll = (data) => {
-  data.map((el) => {
-    return el;
-  });
-};
+    data.map((el) => {
+        return el
+    })
+}

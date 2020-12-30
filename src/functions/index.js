@@ -1,3 +1,3 @@
 export const test = () => {
-  return "this is a test";
-};
+    return 'this is a test'
+}
