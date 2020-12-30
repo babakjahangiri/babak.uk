@@ -1,0 +1,58 @@
+@import '_variables';
+
+.full-section {
+    display: block;
+    width: 98%;
+    margin: 10px 0px 60px 0px;
+    font-family: $page-fontfamily;
+    font-weight: 300;
+    line-height: 2em;
+    font-size: 1em;
+    color: $primary-fontcolor;
+
+    p {
+        padding-right: 5px;
+        padding-left: 5px;
+    }
+    a {
+        color: $primary-fontcolor;
+    }
+}
+
+.m-title {
+    font-size: 2em;
+    font-family: $page-fontfamily;
+    color: $primary-fontcolor;
+    font-weight: 600;
+}
+
+@media only screen and (min-width: 576px) {
+}
+
+@media only screen and (min-width: 768px) {
+    .full-section {
+        width: 95%;
+        margin: 10px 10px 80px 10px;
+        line-height: 2em;
+        font-size: 1.24em;
+
+        p {
+            padding-right: 10px;
+            padding-left: 10px;
+        }
+    }
+    .m-title {
+        font-size: 2em;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .full-section {
+        width: 95%;
+        line-height: 2em;
+        font-size: 1.24em;
+    }
+    .m-title {
+        font-size: 2em;
+    }
+}
