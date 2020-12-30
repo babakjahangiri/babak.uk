@@ -1,63 +1,69 @@
 @import '../../scss/_variables';
 
-.overlay-menu{
-  display:flex;
-  flex-direction:column;
-	width: 100%;
-  height: 0;
-	background: $tertiary-color;
-  transform: translateY(-900px);
-  -webkit-transition: all 1s ease-in-out;
-  -moz-transition: all 1s ease-in-out;
-  -o-transition: all 1s ease-in-out;
-  transition: all 1s ease-in-out;
+.overlay-menu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 0;
+    background: $tertiary-color;
+    transform: translateY(-900px);
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
 }
 
-.overlay-menu-reveal{
-  height: 640px;
-  transform: translateY(0px);
+.overlay-menu-reveal {
+    height: 640px;
+    transform: translateY(0px);
 }
 
-  .nav-hamburger {
+.nav-hamburger {
     text-align: center;
     font-size: 3em;
-    background:$tertiary-color;
+    background: $tertiary-color;
 
-    ul{
+    ul {
         list-style: none;
         padding: 0;
         margin: 30px auto;
         display: inline-block;
 
-        li{
-          line-height: 3em;
-          
-          a{
-            font-weight: 200;
-            font-size: 3rem;
-            color : $primary-fontcolor;
-            text-decoration:none;
-            text-transform:uppercase;
+        li {
+            line-height: 3em;
 
-            &:visited {
-              color: $primary-fontcolor;
+            a {
+                font-weight: 200;
+                font-size: 3rem;
+                color: $primary-fontcolor;
+                text-decoration: none;
+                text-transform: uppercase;
+
+                &:visited {
+                    color: $primary-fontcolor;
+                }
+
+                &:hover,
+                &:focus {
+                    border-bottom: 1px inset $primary-fontcolor;
+                    font-weight: 300;
+                }
             }
-        
-            &:hover, &:focus {
-              border-bottom: 1px inset $primary-fontcolor;
-              font-weight: 300;
+
+            a.active {
+                border-bottom: 1px inset $primary-fontcolor;
+                font-weight: 300;
             }
-          }
         }
     }
 }
 
 @media (min-width: 992px) {
-  .header-mobile {
-    display: none;
-  }
+    .header-mobile {
+        display: none;
+    }
 
-  .overlay-menu{
-    display: none;
-  }
+    .overlay-menu {
+        display: none;
+    }
 }
