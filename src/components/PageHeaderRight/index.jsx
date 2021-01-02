@@ -7,22 +7,22 @@ import projectsImg from './../../images/projects.jpg'
 import solutionsImg from './../../images/solutions.jpg'
 
 const PageHeaderRight = ({ title }) => {
-    let headerImg = ''
+    let headerImg = { src: '', alt: '' }
     switch (title.toLowerCase()) {
         case 'about':
-            headerImg = aboutImg
+            headerImg = { src: aboutImg, alt: 'Babak Jahangiri' }
             break
         case 'contact':
-            headerImg = contactImg
+            headerImg = { src: contactImg, alt: 'Contact' }
             break
         case 'projects':
-            headerImg = projectsImg
+            headerImg = { src: projectsImg, alt: 'Projects' }
             break
         case 'solutions':
-            headerImg = solutionsImg
+            headerImg = { src: solutionsImg, alt: 'Solutions' }
             break
         default:
-            headerImg = projectsImg
+            headerImg = { src: aboutImg, alt: 'Babak' }
             break
     }
 
@@ -35,8 +35,8 @@ const PageHeaderRight = ({ title }) => {
         >
             <div>
                 <img
-                    src={headerImg}
-                    alt="Babak Jahangiri"
+                    src={headerImg.src}
+                    alt={headerImg.alt}
                     className="pageheader-image"
                 />
             </div>
