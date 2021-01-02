@@ -34,8 +34,14 @@ const HeaderLeft = () => {
                     <Menu></Menu>
                 </div>
             </div>
-            <div className="header__lefttwo">
-                {!(location === '/') && <div></div>}
+            <div
+                className={
+                    !(location === '/')
+                        ? 'header__lefttwo-others'
+                        : 'header__lefttwo-home'
+                }
+            >
+                <div></div>
                 <div>
                     <div className="header__left-downblock"></div>
                 </div>
