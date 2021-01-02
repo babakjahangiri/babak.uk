@@ -1,0 +1,121 @@
+@import '../../scss/_variables';
+
+.form-contact {
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+
+    @keyframes blink {
+        0% {
+            border: 2px dashed red;
+        }
+        25% {
+            border: 2px solid $primary-color;
+        }
+        50% {
+            border: 2px dashed red;
+        }
+        75% {
+            border: 2px solid $primary-color;
+        }
+        100% {
+            border: 2px dashed red;
+        }
+    }
+
+    .error {
+        animation: blink 3s infinite;
+
+        &:focus {
+            border: 2px solid white;
+            animation: blink 3s infinite;
+        }
+    }
+
+    @keyframes blink-white {
+        0% {
+            border: 2px dashed $tertiary-color;
+        }
+        25% {
+            border: 2px solid $primary-color;
+        }
+        50% {
+            border: 2px dashed $tertiary-color;
+        }
+        75% {
+            border: 2px solid $primary-color;
+        }
+        100% {
+            border: 2px dashed $tertiary-color;
+        }
+    }
+
+    .error {
+        animation: blink 3s infinite;
+
+        &:focus {
+            animation: blink-white 3s infinite;
+        }
+    }
+
+    #lastName {
+        opacity: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 0;
+        width: 0;
+        z-index: -1;
+    }
+
+    input,
+    textarea {
+        margin: 12px 0px;
+        font-family: $page-fontfamily;
+        font-size: 1em;
+        padding: 7px;
+        border: 2px solid $primary-color;
+
+        &:focus {
+            outline: none;
+            border-color: $primary-fontcolor;
+            background-color: $primary-color;
+            color: $secondary-color;
+        }
+    }
+    textarea {
+        height: 10em;
+    }
+
+    button {
+        outline: none;
+        background-color: $primary-color;
+        color: white;
+        font-size: 1em;
+        font-weight: 300;
+        width: 120px;
+        height: 45px;
+        border-style: none;
+
+        &:hover {
+            background-color: $semidark-color;
+        }
+        &:focus {
+            border: 2px solid $primary-color;
+            background-color: white;
+            color: $primary-fontcolor;
+        }
+    }
+}
+
+@media only screen and (min-width: 576px) {
+}
+
+@media only screen and (min-width: 992px) {
+    .form-contact {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        margin: 30px;
+    }
+}
