@@ -18,6 +18,26 @@
     }
 }
 
+.flex-table {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-content {
+    width: 100%;
+    height: 400px;
+    margin: 30px auto;
+    object-position: bottom center;
+    object-fit: cover;
+}
+
+.seprator-empty {
+    display: block;
+    width: 100%;
+    height: 50px;
+}
+
 .m-title {
     font-size: 2em;
     font-family: $page-fontfamily;
