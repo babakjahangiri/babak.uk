@@ -54,7 +54,7 @@ const Footer = () => {
                 </div>
             </div>
             <div className="footer__right">
-                <p>&#169; 2020 BABAK.UK </p>
+                <p>&#169; 2020-2021 BABAK.UK </p>
                 <div className="footer__down-block"> </div>
             </div>
         </footer>
