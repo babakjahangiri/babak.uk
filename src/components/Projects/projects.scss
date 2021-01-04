@@ -1,0 +1,71 @@
+@import '../../scss/_variables';
+
+.filter-projects {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+
+    li {
+        margin-right: 10px;
+        padding: 1px 20px;
+        background-color: $secondary-color;
+        font-weight: 500;
+
+        &:hover {
+            background-color: $hero-fontcolor;
+            color: white;
+            cursor: pointer;
+        }
+    }
+}
+
+.projects-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.project-row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    :nth-child(2) {
+        width: 100%;
+        text-align: left;
+    }
+}
+
+.project-image {
+    width: 100%;
+    height: auto;
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+    margin: 0 auto;
+
+    &:hover {
+        cursor: pointer;
+        -webkit-filter: none;
+        fill: none;
+    }
+    &:focus {
+        cursor: pointer;
+        -webkit-filter: none;
+        fill: none;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .project-row {
+        display: flex;
+        flex-direction: row;
+    }
+    .project-image {
+        width: 400px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .project-image {
+        width: 500px;
+    }
+}
