@@ -3,7 +3,7 @@ import Project from './Project'
 import { ProjectsFilterContext } from './../../context'
 
 const ProjectsList = ({ projectsData }) => {
-    const [projectFilter, setProjectFilter] = useContext(ProjectsFilterContext)
+    const [projectFilter] = useContext(ProjectsFilterContext)
     return (
         <div className="projects-list">
             <p></p>
