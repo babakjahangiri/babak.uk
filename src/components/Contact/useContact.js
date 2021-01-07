@@ -52,8 +52,7 @@ const useContact = (validateForm, mapErrorToClasses, submitCallback) => {
             setIsSubmitting(true)
         }
 
-        console.log('form Data', formData)
-        console.log('errorClass', errorClass)
+        
         // console.log('form submitted')
         // console.log('Is Loading ', isLoading)
         // console.log('clientData:', clientData)
