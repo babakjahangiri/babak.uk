@@ -12,7 +12,7 @@ export const ToggleBurgerProvider = (props) => {
 }
 
 export const ProjectsFilterProvider = (props) => {
-    const [projectFilter, setProjectFilter] = useState('')
+    const [projectFilter, setProjectFilter] = useState('all')
     return (
         <ProjectsFilterContext.Provider
             value={[projectFilter, setProjectFilter]}

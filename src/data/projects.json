@@ -7,14 +7,14 @@
         "isNew": true,
         "github": "https://github.com/babakjahangiri/NHL",
         "url": "https://babakjahangiri.github.io/NHL/",
-        "technologies": ["HTML", "CSS", "JavaScript"],
+        "technologies": ["HTML", "CSS", "Vanilla JavaScript"],
         "tags": ["html-css"],
         "order": 8
     },
     {
         "id": 2,
-        "name": "Simple Registration Form",
-        "desc": "It is a simple form for registration in new year festival 2020 in London",
+        "name": "Festival Registration Form",
+        "desc": "It is a simple form for registration in the new year festival 2020 in London",
         "image": "./images/projects/newyear2020-london.jpg",
         "isNew": false,
         "github": "https://github.com/babakjahangiri/Birkbeck-m2",
@@ -30,7 +30,7 @@
         "image": "./images/projects/countries-info.jpg",
         "isNew": false,
         "github": "https://github.com/babakjahangiri/countries-project",
-        "url": "https://countries-info-babak.netlify.app/",
+        "url": "https://cyf-babakjahangiri-countries.netlify.app",
         "technologies": ["HTML", "CSS", "JavaScript"],
         "tags": ["html-css", "js"],
         "order": 10
@@ -44,7 +44,7 @@
         "github": "https://github.com/babakjahangiri/baby-names-react",
         "url": "https://cyf-babakjahangiri-baby-names.netlify.app/",
         "technologies": ["HTML", "CSS", "React.Js"],
-        "tags": ["html-css", "react"],
+        "tags": ["react"],
         "order": 12
     },
     {
@@ -56,7 +56,7 @@
         "github": "https://github.com/babakjahangiri/js-weather-app",
         "url": "https://babakjahangiri.github.io/js-weather-app/index.html",
         "technologies": ["HTML", "CSS", "Vanilla JavaScript"],
-        "tags": ["html-css", "js"],
+        "tags": ["js"],
         "order": 14
     },
     {
@@ -68,7 +68,7 @@
         "github": "https://github.com/babakjahangiri/meetups-website-nodejs",
         "url": "https://meetups-website-nodejs.herokuapp.com",
         "technologies": ["HTML", "CSS", "EJS", "Node.JS"],
-        "tags": ["html-css", "node"],
+        "tags": ["node"],
         "order": 18
     },
     {
@@ -79,7 +79,7 @@
         "isNew": false,
         "github": "https://github.com/babakjahangiri/Birkbeck-jsShoppingCart",
         "url": "https://babakjahangiri.github.io/Birkbeck-jsShoppingCart/",
-        "technologies": ["HTML", "CSS", "JavaScript"],
+        "technologies": ["HTML", "CSS", "Vanilla JavaScript"],
         "tags": ["html-css", "js"],
         "order": 20
     },
@@ -89,8 +89,8 @@
         "desc": "The prototype for Jooyak Shopping directory",
         "image": "./images/projects/jooyak-prototype.jpg",
         "isNew": false,
-        "github": "http://github.com/",
-        "url": "http://netlify.com",
+        "github": "https://github.com/babakjahangiri/birkbeck-jooyak",
+        "url": "https://jooyak.netlify.app/",
         "technologies": ["HTML", "CSS", "JavaScript"],
         "tags": ["html-css", "js"],
         "order": 22
@@ -104,7 +104,7 @@
         "github": "https://github.com/babakjahangiri/firebase-ejs-authenticaton",
         "url": "https://sample-firebase.herokuapp.com",
         "technologies": ["HTML", "CSS", "Node.Js", "eJS", "jQuery"],
-        "tags": ["html-css", "node"],
+        "tags": ["node"],
         "order": 24
     },
     {
@@ -128,7 +128,7 @@
         "github": "https://github.com/babakjahangiri/tfl-lines-react",
         "url": "https://cyf-babakjahangiri-tfl-lines.netlify.app/",
         "technologies": ["HTML", "CSS", "React.Js"],
-        "tags": ["html-css", "react"],
+        "tags": ["react"],
         "order": 28
     },
     {
@@ -140,7 +140,19 @@
         "github": "https://github.com/babakjahangiri/mini-ecommerce",
         "url": "https://watchstore-birkbeck.netlify.app/",
         "technologies": ["HTML", "CSS", "React.Js"],
-        "tags": ["html-css", "react"],
+        "tags": ["react"],
         "order": 30
+    },
+    {
+        "id": 13,
+        "name": "TV Shows Database",
+        "desc": "An app that gives a information about TV shows",
+        "image": "./images/projects/tv-project.jpg",
+        "isNew": false,
+        "github": "https://github.com/babakjahangiri/firebase-ejs-authenticaton",
+        "url": "https://cyf-babakjahangiri-tv.netlify.app",
+        "technologies": ["HTML", "CSS", "Vanilla JavaScript"],
+        "tags": ["html-css", "js"],
+        "order": 25
     }
 ]
