@@ -35,7 +35,7 @@ const Solutions = () => {
                 library for building modern UI components and connecting an
                 application to any API.
             </p>
-            <div class="seprator-empty"></div>
+            <div className="seprator-empty"></div>
             <h2 className="m-title">Backend Solutions</h2>
             <p>
                 The back-end is the engine of your website, it's the machinery
