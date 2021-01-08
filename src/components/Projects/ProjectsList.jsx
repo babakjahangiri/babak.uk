@@ -6,7 +6,6 @@ const ProjectsList = ({ projectsData }) => {
     const [projectFilter] = useContext(ProjectsFilterContext)
     return (
         <div className="projects-list">
-            <p></p>
             {projectsData
                 .filter((project) => {
                     if (projectFilter !== 'all') {

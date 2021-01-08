@@ -41,33 +41,17 @@ const useContact = (validateForm, mapErrorToClasses, submitCallback) => {
 
         if (Object.keys(validateErrors).length > 0) {
             setFormClass({ ...errorClass })
-            console.log('------ errors found -----')
-            console.log('OKE', Object.keys(validateErrors))
-            console.log('validate Error :', validateErrors)
+            // console.log('OKE', Object.keys(validateErrors))
+            //console.log('validate Error :', validateErrors)
         } else {
             const messageBody = ReactDOMServer.renderToStaticMarkup(
                 htmlEmail(formData, clientData)
             )
+
             const rst = sendEmail('Babak.uk contact form', messageBody)
             setIsSubmitting(true)
+            console.log('result :', rst)
         }
-
-        
-        // console.log('form submitted')
-        // console.log('Is Loading ', isLoading)
-        // console.log('clientData:', clientData)
-        // setSubmitted(true)
-        console.log('********************')
-
-        // console.log('messageBody >>>> ', messageBody)
-        // console.log('mailerResult', rst)
-        // if (!isLoading) {
-        // messageBody = ReactDOMServer.renderToStaticMarkup(
-        //     htmlEmail(formData, clientData)
-        // )
-        //     console.log('clientData:', clientData)
-        //   console.log('messageBody:', messageBody)
-        // }
     }
 
     useEffect(() => {

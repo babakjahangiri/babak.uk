@@ -1,16 +1,26 @@
 @import '../../scss/_variables';
 
+.projects-container {
+    margin: 0 5%;
+    font-family: $page-fontfamily;
+    font-weight: 300;
+    color: $primary-fontcolor;
+}
+
 .filter-projects {
     list-style: none;
     display: flex;
     flex-direction: row;
-    padding-left: 0px;
+    flex-wrap: wrap;
+    font-size: 0.85em;
+    padding: 0px;
 
     li {
-        margin-right: 10px;
-        padding: 1px 20px;
         background-color: $secondary-color;
         font-weight: 500;
+        font-size: 0.6em;
+        margin: 5px;
+        padding: 10px 10px;
 
         &:hover {
             background-color: $hero-fontcolor;
@@ -33,14 +43,10 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 100px auto;
+    margin: 50px auto 100px auto;
 
     > div {
         display: flex;
-    }
-
-    > div:nth-child(2) {
-        padding-left: 50px;
     }
 }
 
@@ -73,9 +79,9 @@
 }
 
 .project-name {
-    margin: 0px auto;
-    font-size: 1.75em;
-    font-weight: 600;
+    margin: 20px auto 0px 0px;
+    font-size: 1.45em;
+    font-weight: 400;
 }
 
 .project-desc {
@@ -106,7 +112,7 @@
 .project-urls {
     display: flex;
     justify-content: flex-start;
-    font-size: 0.85em;
+    font-size: 0.65em;
 
     > a {
         display: flex;
@@ -114,30 +120,115 @@
         align-items: center;
 
         width: 200px;
-        height: 50px;
-        margin-right: 100px;
+        height: 40px;
+        margin: 10px 5px;
         border: 1px solid $secondary-color;
-        padding: 10px;
+        padding: 10px 10px;
+
+        &:link,
+        &:visited {
+            color: $primary-fontcolor;
+        }
+
+        &:hover {
+            background-color: $secondary-color;
+        }
     }
 }
 
 .globe-icon,
 .github-icon {
-    height: 28px;
-    width: 28px;
+    height: 20px;
+    width: 20px;
 }
 
 @media only screen and (min-width: 768px) {
+    .filter-projects {
+        li {
+            font-size: 0.85em;
+            padding: 10px 20px;
+        }
+    }
+
+    .project-technologies {
+        > li {
+            line-height: 2em;
+            padding: 0px 10px;
+            margin: 0px 2px;
+        }
+    }
+
     .project-row {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
+
+        > div:nth-child(2) {
+            padding-left: 10px;
+        }
     }
     .project-image {
-        width: 400px;
+        width: 100%;
+    }
+
+    .project-name {
+        margin: 30px auto 10px;
+        font-size: 1.75em;
+        font-weight: 600;
+    }
+
+    .globe-icon,
+    .github-icon {
+        height: 24px;
+        width: 24px;
+    }
+
+    .project-urls {
+        font-size: 0.85em;
+
+        > a {
+            width: 200px;
+            height: 50px;
+            margin: 10px 20px auto 0px;
+            border: 1px solid $secondary-color;
+            padding: 10px 10px;
+        }
     }
 }
 
 @media only screen and (min-width: 992px) {
+    .filter-projects {
+        li {
+            font-size: 1em;
+            padding: 10px 20px;
+        }
+    }
+
+    .project-image {
+        width: 400px;
+    }
+
+    .project-name {
+        margin: 0px auto;
+        font-size: 1.75em;
+        font-weight: 600;
+    }
+
+    .project-row {
+        display: flex;
+        flex-direction: row;
+        > div:nth-child(2) {
+            padding-left: 30px;
+        }
+    }
+
+    .project-urls {
+        > a {
+            margin-right: 10px;
+        }
+    }
+}
+
+@media only screen and (min-width: 1200px) {
     .project-image {
         width: 500px;
     }

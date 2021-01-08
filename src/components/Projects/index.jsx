@@ -9,8 +9,10 @@ const Projects = () => {
     return (
         <ProjectsFilterProvider>
             <section className="projects-container">
-                <h3 className="s-title">Technologies :</h3>
-                <FilterProjects />
+                <div className="technologies-container">
+                    <h3 className="s-title">Technologies :</h3>
+                    <FilterProjects />
+                </div>
                 <ProjectsList projectsData={projectsData} />
             </section>
         </ProjectsFilterProvider>

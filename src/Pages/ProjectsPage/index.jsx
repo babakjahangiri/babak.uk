@@ -16,9 +16,7 @@ const ProjectsPage = () => {
                     used in. Live demo for some projects is available.
                 </p>
             </div>
-            <div className="full-section">
-                <Projects />
-            </div>
+            <Projects />
         </React.Fragment>
     )
 }
