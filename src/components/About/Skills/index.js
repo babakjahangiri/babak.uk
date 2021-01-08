@@ -6,23 +6,27 @@ const Skills = () => {
     return (
         <Fragment>
             <table>
-                {skills.map((skill) => {
-                    return (
-                        <tr className="skill-row">
-                            <td>
-                                <div className="skill-title">{skill.name}</div>
-                            </td>
-                            <td className="skill-bar-column">
-                                <div className="skill-bar">
-                                    <span
-                                        className="skill-progress"
-                                        style={{ width: skill.percentage }}
-                                    ></span>
-                                </div>
-                            </td>
-                        </tr>
-                    )
-                })}
+                <tbody>
+                    {skills.map((skill) => {
+                        return (
+                            <tr className="skill-row" key={skill.id}>
+                                <td>
+                                    <div className="skill-title">
+                                        {skill.name}
+                                    </div>
+                                </td>
+                                <td className="skill-bar-column">
+                                    <div className="skill-bar">
+                                        <span
+                                            className="skill-progress"
+                                            style={{ width: skill.percentage }}
+                                        ></span>
+                                    </div>
+                                </td>
+                            </tr>
+                        )
+                    })}
+                </tbody>
             </table>
         </Fragment>
     )
