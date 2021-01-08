@@ -1,8 +1,8 @@
 import axios from 'axios'
 
 export const sendEmail = (subject, message) => {
-    //const MailerURL = 'https://babak-mailer.herokuapp.com/send'
-    const MailerURL = 'http://localhost:5001/send'
+    const MailerURL = 'https://babak-mailer.herokuapp.com/send'
+    // const MailerURL = 'http://localhost:5001/send'
     let result = false
 
     // axios.interceptors.request.use((req) => {
