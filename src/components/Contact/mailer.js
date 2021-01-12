@@ -19,7 +19,7 @@ export const sendEmail = (subject, message) => {
         .then((response) => {
             result = response.data.success
             // console.log('email response --> >  >', response.data)
-            // console.log(response.data.success)
+            console.log(response.data.success)
         })
         .catch((error) => {
             if (!error.response) {
