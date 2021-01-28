@@ -37,16 +37,22 @@ const useContact = (validateForm, mapErrorToClasses, submitCallback) => {
         setErrors(validateErrors)
         const errorClass = mapErrorToClasses(validateErrors)
 
-        //console.log('errorClasses >>>> ', errorClass)
+        // console.log('errorClasses >>>> ', errorClass)
 
         if (Object.keys(validateErrors).length > 0) {
             setFormClass({ ...errorClass })
-            // console.log('OKE', Object.keys(validateErrors))
+
+            console.log('there is a problem')
+            console.log('OKE', Object.keys(validateErrors))
+
+            console.log('error Class : ', errorClass)
             //console.log('validate Error :', validateErrors)
         } else {
             const messageBody = ReactDOMServer.renderToStaticMarkup(
                 htmlEmail(formData, clientData)
             )
+
+            console.log('everything is fine')
 
             const rst = sendEmail('Babak.uk contact form', messageBody)
             setIsSubmitting(true)
