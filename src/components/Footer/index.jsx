@@ -32,7 +32,7 @@ const Footer = () => {
                 </div>
                 <div className="footer__social-block">
                     <a
-                        href="https://www.linkedin.com/in/babak-jhn/"
+                        href="https://www.linkedin.com/in/babak-uk/"
                         title="Github"
                     >
                         <i className="fab fa-linkedin-in"></i>
